@@ -13,14 +13,15 @@ import {StyleSheet,  SafeAreaView, Text, } from 'react-native';
 // get my code
 import FullEventScreen from './app/component/fullEventScreen';
 import SmallEventScreen from './app/component/smallEventSreen';
-
+import Prepaid from './app/screen/prepaid';
 
 export default class App extends Component{
   render() {
     return (
       <SafeAreaView style={styles.container}>
         {/* <FullEventScreen/> */}
-        <SmallEventScreen />
+        {/* <SmallEventScreen /> */}
+        <Prepaid />
       </SafeAreaView>
     );
   }

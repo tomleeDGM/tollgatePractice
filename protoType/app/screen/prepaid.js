@@ -14,14 +14,16 @@ export default class  prepaid extends Component{
 
         this.state = {
             headerName: '',
-            utilityImgBackSource: 'require(../images/utility/back/drawable-hdpi/backword.png)',
+            utilityImgBackSource: 'require("../images/utility/back/drawable-hdpi/backword.png")',
+            utilityImgCloseSource: 'require("../images/utility/close/drawable-hdpi/close.png")'   
         }
     }
 
     render() {
         return(
             <View style={styles.prepaidConatiner}>
-                <Header firstImgSource={this.state.utilityImgBackSource} title='CARD' headerImgFirst={styles.headerImgFirst} />
+                <Header firstImgSource={this.state.utilityImgBackSource} lastImgSource={this.state.utilityImgCloseSource} title='CARD' />
+                
             </View>
         );
     }
@@ -31,13 +33,8 @@ const styles = StyleSheet.create({
     prepaidConatiner: {
         flex: 1,
         alignItems: 'center',
-        justifyContent: 'center',
         width:  width,
         height: height,
-        backgroundColor: 'yellow',
     },
-    headerImgFirst: {
-        
-    }
 
 });
