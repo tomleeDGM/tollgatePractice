@@ -22,7 +22,7 @@ export default class Button extends React.Component{
 // 현재 이미지 컴포넌트가 생성되지 않는다.
     imgArea(){
         return(
-            <Image source={this.state.imgUrl} />
+            <Image source={this.state.imgSource} />
         )
     }
 

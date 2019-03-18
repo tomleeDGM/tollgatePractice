@@ -7,13 +7,13 @@
  */
 
 import React, {Component} from 'react';
-import {StyleSheet,  SafeAreaView, Text, } from 'react-native';
+import {StyleSheet,  SafeAreaView, } from 'react-native';
 
 
 // get my code
 import FullEventScreen from './app/component/fullEventScreen';
-import SmallEventScreen from './app/component/smallEventSreen';
-import Prepaid from './app/screen/prepaid';
+// import SmallEventScreen from './app/component/smallEventSreen';
+import Prepaid from './app/screen/Prepaid';
 
 export default class App extends Component{
   render() {
